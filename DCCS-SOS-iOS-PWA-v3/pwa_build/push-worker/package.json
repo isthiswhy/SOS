@@ -1,0 +1,17 @@
+{
+  "name": "dccs-sos-push-worker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "secret:vapid-private": "wrangler secret put VAPID_PRIVATE_KEY",
+    "secret:push-token": "wrangler secret put PUSH_SECRET"
+  },
+  "devDependencies": {
+    "wrangler": "^3.90.0"
+  },
+  "dependencies": {
+    "@block65/webcrypto-web-push": "^3.0.0"
+  }
+}
