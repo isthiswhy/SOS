@@ -1,9 +1,0 @@
-name = "dccs-sos-push"
-main = "src/index.js"
-compatibility_date = "2026-09-01"
-
-# Non-secret config. The two real secrets (VAPID_PRIVATE_KEY, PUSH_SECRET) are
-# set with `wrangler secret put ...` - see README.md - and must NOT go here.
-[vars]
-VAPID_SUBJECT = "mailto:geluzyehudi@gmail.com"
-VAPID_PUBLIC_KEY = "BKycqtoGPs8BqJDYA2ORdKZQUxqOfqlcC7XBC_s9vs4yFINQn2YdhmncGLdBuwJ8O4m7Y1amj-xNH5L0HpG5iVk"
